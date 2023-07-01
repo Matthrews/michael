@@ -1,0 +1,43 @@
+{
+  "name": "michael",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Matthrews/michael.git",
+  "author": "Oliver <matthrews@outlook.com>",
+  "keywords": [
+    "简历",
+    "陈德广",
+    "Magento",
+    "Shopify",
+    "WordPress",
+    "Durpal",
+    "跨境电商",
+    "独立站",
+    "Elasticsearch",
+    "e-Commerce",
+    "CMS"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "core-js": "^3.8.0",
+    "parcel": "^1.12.3",
+    "parcel-bundler": "^1.12.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "^7.13.8"
+  },
+  "homepage": ".",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 1%,last 2 versions,not ie <= 8",
+        "useBuiltIns": "usage",
+        "corejs": "3.8.0"
+      }
+    ]
+  ]
+}
