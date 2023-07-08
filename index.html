@@ -102,6 +102,26 @@
             top: 0;
             right: 0;
         }
+
+        section h2 {
+            background: #f2fafa;
+            color: #337984;
+        }
+
+        section h2::before {
+            content: "|";
+            width: 4px;
+            margin-right: 8px;
+            color: #48a3a6;
+            display: inline-block;
+        }
+    </style>
+
+    <!-- 个人简介 -->
+    <style type="text/css">
+        .bio p {
+            margin: 0;
+        }
     </style>
 
     <!-- 项目经历 -->
@@ -130,6 +150,10 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 8px;
+        }
+
+        .projects>ol>li>ul {
+            padding-inline-start: 16px;
         }
 
         .projects>ol>li>img {
@@ -221,6 +245,13 @@
         }
     </style>
 
+    <!-- 作品集 -->
+    <style type="text/css">
+        .collections ul li {
+            margin-bottom: 0.2em;
+        }
+    </style>
+
     <!-- 自适应 -->
     <style type="text/css">
         @media (max-width: 500px) {
@@ -262,7 +293,9 @@
     <article>
         <section class="bio">
             <h1>陈德广</h1>
-            <p>10年工作经验 | 上海 | 男 | 手机：13223000086(微信同号) | 邮箱：821026668@qq.com</p>
+            <p>10年工作经验 | 上海 | 男 | 本科</p>
+            <p>手机：13223000086(微信同号) | 邮箱：821026668@qq.com</p>
+            <p>求职意向：技术负责人，高级Magento工程师, 高级Java工程师, 高级全栈工程师</p>
         </section>
 
         <section class="skills">
@@ -272,7 +305,7 @@
                     <li>精通 PHP 语言，熟悉 Laravel 路由，中间件，服务容器，事件系统，MVC 架构等</li>
                     <li>熟悉常用的 Java 开发框架，如 Spring、Spring Boot、Hibernate 等，能够使用框架进行快速开发</li>
                     <li>熟悉主流的前端技术，如 React, Vue, Angular, Antd, Three.js</strong></li>
-                    <li>熟悉 Magento 站点开发维护, 帮助 10 多个中小型企业搭建维护过跨境贸易站点</li>
+                    <li>熟悉 Magento 站点开发维护, 帮助 10 多个中小型企业搭建维护过跨境站点, 其中 UNice 上线两年网站访问量已达百万</li>
                     <li>熟悉常见的开源 ERP 系统，能够快速进行二次开发</li>
                 </ul>
             </div>
@@ -283,21 +316,18 @@
             <ol>
                 <li>
                     <header>
-                        <h3>自由职业</h3>
-                        <h4>独立站为主</h4>
+                        <h3>UNice</h3>
+                        <h4>高级 Magento 开发工程师</h4>
                         <span><time>2020年6月</time>~<time>2022年4月</time></span>
                     </header>
                     <p class="tags">
-                        <code>自由职业</code>
-                        <code>独立站</code>
-                        <code>交付</code>
+                        <code>集成测试</code>
+                        <code>跨境独立站</code>
+                        <code>独立交付</code>
                     </p>
-                    <p>知名假发电商平台 UNice 站点搭建，帮助其在成立初期快速开展业务</p>
-                    <p>义乌小商品批发市场的电商SAAS平台</p>
-                    <p>瞧阳区人民政府门户网站</p>
-                    <p>筑图中国的建筑图纸文档下载收费的SAAS平台</p>
-                    <p>水墨道-中国书画艺术网 SAAS模式的书画交易平台</p>
-                    <p>搜麦(Somai)智慧办公解决方案</p>
+                    <p>负责知名假发电商平台 UNice 站点从零到一的搭建部署</p>
+                    <p>主要工作内容包括主题定制，购物车和支付模块自定义，集成测试，线上部署，技术培训等全流程工作</p>
+                    <p>业绩：帮助其在成立初期快速开展海外业务。截止到 2022Q4，荣获出海电商品牌社媒影响力第二名，仅次于 SHEIN</p>
                 </li>
                 <li>
                     <header>
@@ -306,13 +336,13 @@
                         <span><time>2020年6月</time>~<time>2022年4月</time></span>
                     </header>
                     <p class="tags">
-                        <code>团队负责人</code>
+                        <code>技术负责人</code>
                         <code>支付系统</code>
                         <code>数据一致性</code>
                     </p>
                     <p>参与公司核心产品架构设计，负责接入各大主流电子商务平台的支付系统</p>
                     <p>对支付系统数据一致性有一定的实践</p>
-                    <p>业绩：支撑公司聚合支付平稳运行，丢单问题不断减少</p>
+                    <p>业绩：支撑公司聚合支付系统平稳运行，丢单问题不断减少</p>
                 </li>
 
                 <li>
@@ -322,41 +352,40 @@
                         <span><time>2018年3月</time>~<time>2020年5月</time></span>
                     </header>
                     <p class="tags">
-                        <code>团队负责人</code>
+                        <code>技术负责人</code>
                         <code>知识图谱</code>
                         <code>可视化</code>
                     </p>
-                    <p>负责知识图谱大数据项目的开发，前端技术栈：Vue, Element UI, Echart, Three.js等</p>
-                    <p>调研可视化技术方案，撰写文档，高质量交付</p>
+                    <p>负责知识图谱大数据项目的开发，前端技术栈：Vue, Element UI, Echarts, Three.js等</p>
+                    <p>调研可视化技术方案，撰写文档，高质量交付等</p>
                     <p>业绩：项目稳定运行，无数据错误，客户满意度较高</p>
                 </li>
 
                 <li>
                     <header>
                         <h3> MineBit </h3>
-                        <h4>前端负责人</h4>
+                        <h4>技术负责人</h4>
                         <span><time>2016年5月</time>~<time>2018年1月</time></span>
                     </header>
                     <p class="tags">
-                        <code>团队负责人</code>
+                        <code>技术负责人</code>
                         <code>交易所</code>
                         <code>区块链</code>
                     </p>
-                    <p>负责实盘交易平台前端开发，时图测绘用到了 Tradingview </p>
-                    <p>负责部门内部 Tradingview 培训工作</p>
+                    <p>负责实盘交易平台前端开发，使用 TradingView 做K线图的展示与交互</p>
+                    <p>使用数据缓存、异步处理、分布式部署等技术手段，提高了系统的吞吐量和响应速度</p>
+                    <p>负责部门内部 TradingView 培训工作</p>
+                    <p>业绩：高效，安全，容错率高</p>
                 </li>
             </ol>
         </section>
 
-        <section class="projects">
+        <section class="projects page2">
             <h2>项目经历</h2>
             <ol>
                 <li>
                     <header>
                         <h3>大型电商SaaS全流程项目</h3>
-                        <span>
-                            <a target="_blank" href="https://www.unice.com/">作品预览</a>
-                        </span>
                     </header>
                     <img width="100%" height="100%" src="/imgs/p_1.jpg" alt="">
                     <p>负责知名假发电商平台 UNice 站点搭建，帮助其在成立初期快速开展海外业务</p>
@@ -364,7 +393,7 @@
                     <p>
                         项目职责：
                     <ul>
-                        <li>1. 自定义开发用户登录，购物车，支付等核心模块</li>
+                        <li>1. 自定义用户登录，购物车，支付等核心模块</li>
                         <li>2. 优化网站的性能和安全性，使用缓存和索引技术提高网站访问速度，配置SSL证书提高网站访问安全性</li>
                         <li>3. 编写和运行单元测试和集成测试，保证功能可靠性</li>
                         <li>4. 负责网站的线上部署和运维工作，培训新人等</li>
@@ -377,15 +406,12 @@
                         <li>3. 通过 Page Analytics 技术分析用户数据，为商业决策赋能</li>
                     </ul>
                     </p>
-                    <p>品牌影响力：2022Q2 出海品牌社媒影响力排行榜电子商务类第二，仅次于 SHEIN</p>
+                    <p>品牌影响力：2022Q4 出海品牌社媒影响力排行榜电子商务类第二，仅次于 SHEIN</p>
                 </li>
 
-                <li>
+                <li class="page2">
                     <header>
                         <h3>大型区块链交易所项目</h3>
-                        <span>
-                            <a target="_self" href="#collection">作品预览</a>
-                        </span>
                     </header>
                     <img width="100%" height="100%" src="/imgs/p_2.jpg" alt="">
                     <p>
@@ -395,8 +421,8 @@
                     <p>
                         项目职责：
                     <ul>
-                        <li>1. 数据获取和处理：利用 Kafka 从交易所的交易流中获取原始交易数据，使用 TradingView 做 K线图的展示与交互</li>
-                        <li>2. 数据存储和索引：为了支持高效的 K 线图查询和回溯功能，使用了关系型数据库来存储和管理 K 线数据。并使用合适的索引策略，提高数据的读取效率</li>
+                        <li>1. 数据获取和处理：利用 Kafka 从交易所的交易流中获取原始交易数据，使用 TradingView 做K线图的展示与交互</li>
+                        <li>2. 数据存储和索引：为了支持高效的K线图查询和回溯功能，使用了关系型数据库来存储和管理K线数据。并使用合适的索引策略，提高数据的读取效率</li>
                         <li>3. 异常处理和容错设计：为了保证系统的稳定性，设计了合理的异常处理机制，并采取了一些容错措施，如重试机制和故障转移策略</li>
                         <li>4. 性能优化：使用数据缓存、异步处理、分布式部署等技术手段，提高了系统的吞吐量和响应速度</li>
                     </ul>
@@ -408,9 +434,6 @@
                 <li class="page2">
                     <header>
                         <h3>智慧矿山运营中心</h3>
-                        <span>
-                            <a target="_self" href="#collection">作品预览</a>
-                        </span>
                     </header>
                     <img width="100%" height="100%" src="/imgs/p_3.jpg" alt="">
                     <p>矿山设备驾驶舱数据可视化平台</p>
@@ -436,14 +459,18 @@
             <h2>作品集</h2>
             <ul>
                 <li><a target="_blank" href="https://www.unice.com/">UNice</a>&nbsp;&nbsp;知名假发电商平台</li>
+                <li><a target="_blank" href="https://www.minebit.com/">MineBit</a>&nbsp;&nbsp;高效透明数字资产交易平台</li>
                 <li><a target="_blank" href="https://www.somaicloud.com/">搜麦</a>&nbsp;&nbsp;&nbsp;智慧办公解决方案</li>
+                <li><a target="_blank" href="http://zhutucn.com/">筑图网</a>&nbsp;&nbsp;&nbsp;建筑及相关行业学习交流平台</li>
+                <li><a target="_blank" href="https://www.suiyangqu.gov.cn/">商丘市睢阳区政府网</a>&nbsp;&nbsp;&nbsp;政府门户网站</li>
             </ul>
         </section>
 
-        <section class="education">
+        <section class="education page2">
             <h2>教育经历</h2>
-            <!-- <p><span><time>201X年</time>~<time>201Y年</time></span> MM大学 NN专业 全日制本科</p> -->
-            <p>学历：本科&nbsp;&nbsp;&nbsp;职称：会计师&nbsp;&nbsp;&nbsp;证书：纪委办案系统版权证书</p>
+            <p>大学：河南大学 计算机专业 本科</p>
+            <p>证书：纪委办案系统版权证书</p>
+            <p>职称：会计师</p>
         </section>
         <section class="practice">
             <h2>自我评价</h2>
