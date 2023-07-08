@@ -254,6 +254,9 @@
 
     <!-- 自适应 -->
     <style type="text/css">
+        .bio .mobile {
+            display: none;
+        }
         @media (max-width: 500px) {
             body {
                 margin: 0;
@@ -266,6 +269,14 @@
 
             .bio img {
                 display: none;
+            }
+
+            .bio .pc {
+                display: none;
+            }
+
+            .bio .mobile {
+                display: block;
             }
 
             .skills .wrapper {
@@ -294,8 +305,11 @@
         <section class="bio">
             <h1>陈德广</h1>
             <p>10年工作经验 | 上海 | 男 | 本科</p>
-            <p>手机：13223000086(微信同号) | 邮箱：821026668@qq.com</p>
-            <p>求职意向：技术负责人，高级Magento工程师, 高级Java工程师, 高级全栈工程师</p>
+            <p class="pc">手机：13223000086(微信同号) | 邮箱：821026668@qq.com</p>
+            <p class="pc">求职意向：技术负责人，高级Magento工程师, 高级Java工程师, 高级全栈工程师</p>
+            <p class="mobile">联系方式：13223000086(微信同号)</p>
+            <p class="mobile">电子邮箱：821026668@qq.com</p>
+            <p class="mobile">求职意向：<br />技术负责人，高级Magento工程师, 高级Java工程师, 高级全栈工程师</p>
         </section>
 
         <section class="skills">
